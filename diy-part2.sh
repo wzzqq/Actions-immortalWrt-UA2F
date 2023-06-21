@@ -24,3 +24,26 @@ for configFile in $(ls target/linux/$target/config*)
 do
     echo -e "\nCONFIG_NETFILTER_NETLINK_GLUE_CT=y" >> $configFile
 done
+
+cat <<EOT >> .config
+CONFIG_PACKAGE_kmod-ipt-conntrack-extra=y
+CONFIG_PACKAGE_kmod-ipt-filter=y
+CONFIG_PACKAGE_kmod-ipt-ipopt=y
+CONFIG_PACKAGE_kmod-ipt-nfqueue=y
+CONFIG_PACKAGE_kmod-ipt-u32=y
+CONFIG_PACKAGE_kmod-nfnetlink-queue=y
+CONFIG_PACKAGE_libnetfilter-conntrack=y
+CONFIG_PACKAGE_libnetfilter-queue=y
+CONFIG_PACKAGE_libnfnetlink=y
+CONFIG_PACKAGE_iptables-mod-conntrack-extra=y
+CONFIG_PACKAGE_iptables-mod-filter=y
+CONFIG_PACKAGE_iptables-mod-ipopt=y
+CONFIG_PACKAGE_iptables-mod-nfqueue=y
+CONFIG_PACKAGE_iptables-mod-u32=y
+CONFIG_PACKAGE_ipset=y
+CONFIG_PACKAGE_libmnl=y
+CONFIG_PACKAGE_kmod-rkp-ipid=y
+CONFIG_PACKAGE_ua2f=y
+CONFIG_UA2F_CUSTOM_USER_AGENT=y
+CONFIG_UA2F_USER_AGENT_STRING="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.50"
+EOT
