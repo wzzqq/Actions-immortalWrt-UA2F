@@ -48,5 +48,5 @@ CONFIG_PACKAGE_libmnl=y
 CONFIG_PACKAGE_kmod-rkp-ipid=y
 CONFIG_PACKAGE_ua2f=y
 CONFIG_UA2F_CUSTOM_USER_AGENT=y
-CONFIG_UA2F_USER_AGENT_STRING="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.50"
+CONFIG_UA2F_USER_AGENT_STRING="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.51"
 EOT
